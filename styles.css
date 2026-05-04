@@ -680,7 +680,7 @@ body {
   font-family: "Cormorant Garamond", "Sitka Text", Georgia, serif;
   font-weight: 400;
   box-sizing: border-box;
-  border-radius: 16px;
+  border-radius: 0;
   box-shadow: 0 20px 48px rgba(210, 43, 43, 0.28);
 }
 
