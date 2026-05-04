@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khoi Duyen Wedding</title>
+    <link
+      rel="preload"
+      href="./assets/nhac.mp3"
+      as="audio"
+      type="audio/mpeg"
+      fetchpriority="high"
+    />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pinyon+Script&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <audio
+      id="announcement-audio"
+      autoplay
+      preload="auto"
+      playsinline
+      src="./assets/nhac.mp3"
+    ></audio>
+    <script>
+      (function () {
+        var audioElement = document.getElementById("announcement-audio");
+        if (audioElement) audioElement.play().catch(function () {});
+      })();
+    </script>
+    <main class="site-shell">
+      <div class="lang-switch reveal" aria-label="Language switcher">
+        <a class="lang-btn" href="./vi.html" aria-label="Chuyen sang tieng Viet">
+          <img loading="lazy" decoding="async" src="./assets/translate_vn.svg" alt="Vietnamese" />
+        </a>
+      </div>
+
+      <section class="hero reveal">
+        <p class="hero-sub">Save the Date</p>
+        <h1 class="hero-title">
+          <img loading="lazy" decoding="async" src="./assets/logo.svg" alt="Khoi Duyen Logo" />
+        </h1>
+      </section>
+
+      <section class="frame reveal">
+        <div class="frame-side frame-side-left">
+          <img loading="eager" fetchpriority="high" decoding="async" src="./assets/hero-image-left.jpg" alt="Khung ảnh trang trí trái" />
+        </div>
+        <div class="frame-center">
+          <img loading="eager" fetchpriority="high" decoding="async" src="./assets/hero-image-center.jpg" alt="Ảnh cặp đôi" />
+        </div>
+        <div class="frame-side frame-side-right">
+          <img loading="eager" fetchpriority="high" decoding="async" src="./assets/hero-image-right.jpg" alt="Khung ảnh trang trí phải" />
+        </div>
+      </section>
+
+      <section class="text-block reveal">
+        <p>
+          Gặp nhau là chuyện tình cờ,</br>Thương nhau là chuyện đợi chờ trăm năm.
+        </p>
+      </section>
+
+      <section class="announcement reveal">
+        <div class="player-ui" aria-label="Music player">
+          <div class="player-controls">
+            <button class="player-icon-btn" type="button" aria-label="Shuffle">
+              <img loading="lazy" decoding="async" src="./assets/music-icons/shuffle.svg" alt="" />
+            </button>
+            <button class="player-icon-btn" type="button" aria-label="Previous">
+              <img loading="lazy" decoding="async" src="./assets/music-icons/prev.svg" alt="" />
+            </button>
+            <button
+              class="player-icon-btn is-play"
+              type="button"
+              id="announcement-play"
+              aria-label="Play music"
+              aria-pressed="false"
+            >
+              <img loading="lazy" decoding="async" src="./assets/music-icons/play.svg" alt="" />
+            </button>
+            <button class="player-icon-btn" type="button" aria-label="Next">
+              <img loading="lazy" decoding="async" src="./assets/music-icons/next.svg" alt="" />
+            </button>
+            <button class="player-icon-btn" type="button" aria-label="Repeat">
+              <img loading="lazy" decoding="async" src="./assets/music-icons/repeat.svg" alt="" />
+            </button>
+          </div>
+          <div class="waveform" aria-hidden="true">
+            <span class="bar h6"></span>
+            <span class="bar h3"></span>
+            <span class="bar h4"></span>
+            <span class="bar h5"></span>
+            <span class="bar h7"></span>
+            <span class="bar h3"></span>
+            <span class="bar h4"></span>
+            <span class="bar h5"></span>
+            <span class="bar h8"></span>
+            <span class="bar h4"></span>
+            <span class="bar h3"></span>
+            <span class="bar h5"></span>
+            <span class="bar h7"></span>
+            <span class="bar h4"></span>
+            <span class="bar h3"></span>
+            <span class="bar h5"></span>
+          </div>
+        </div>
+
+        <div class="rings" aria-hidden="true">
+          <img class="ring-groom" loading="lazy" decoding="async" src="./assets/ring-for-groom.svg" alt="" />
+          <img class="ring-bride" loading="lazy" decoding="async" src="./assets/ring-for-bride.svg" alt="" />
+        </div>
+
+        <h2 class="announcement-title">RESPECTFULLY ANNOUNCING THE WEDDING CEREMONY</h2>
+
+        <div class="family-grid">
+          <article>
+            <p class="family-role">GROOM'S FAMILY</p>
+            <p>MR. VU VAN TUYEN</p>
+            <p>MRS. DUONG THI DIEM CHI</p>
+          </article>
+          <article>
+            <p class="family-role">BRIDE'S FAMILY</p>
+            <p>MR. DOAN THANH</p>
+            <p>MRS. TRAN THI TRA MY</p>
+          </article>
+        </div>
+
+        <div class="couple-names">
+          <div>
+            <p class="couple-role">GROOM</p>
+            <p class="couple-sign">Ngoc Khoi</p>
+          </div>
+          <div>
+            <p class="couple-role">BRIDE</p>
+            <p class="couple-sign">My Duyen</p>
+          </div>
+        </div>
+
+        <div class="portrait-grid">
+          <article class="portrait reveal">
+            <img loading="lazy" decoding="async" src="./assets/portrait-groom.jpg" alt="Ảnh chân dung chú rể" />
+          </article>
+          <article class="portrait reveal">
+            <img loading="lazy" decoding="async" src="./assets/portrait-bride.jpg" alt="Ảnh chân dung cô dâu" />
+          </article>
+        </div>
+      </section>
+
+      <section class="invite-card reveal">
+        <p class="invite-top">CORDIALLY INVITE YOU</p>
+        <p class="invite-sub">To celebrate our wedding</p>
+        <h3 class="invite-venue">FOR YOU LUXURY</h3>
+        <div class="invite-address">
+          <p>LAVENDER HALL (2ND FLOOR)</p>
+          <p>2/9 STREET CENTRAL PARK</p>
+          <p>HOA CUONG WARD, DA NANG CITY</p>
+        </div>
+        <div class="invite-schedule">
+          <p><span>GUEST WELCOMING</span> <strong>11:00</strong></p>
+          <p><span>WEDDING BANQUET</span> <strong>12:00</strong></p>
+        </div>
+      </section>
+
+      <section class="calendar-block reveal">
+        <img loading="lazy" decoding="async" src="./assets/calendar.jpg" alt="Lịch cưới" />
+      </section>
+
+      <section class="location-block reveal">
+        <img loading="lazy" decoding="async" src="./assets/map.jpg" alt="Wedding location map" />
+        <a href="https://maps.app.goo.gl/14R7666FP787HLyo7" target="_blank">Show on map</a>
+      </section>
+
+      <section class="gift-section reveal">
+        <h3>WEDDING GIFT FOR THE BRIDE AND GROOM</h3>
+        <div class="gift-row">
+          <article
+            class="gift-card pop-in gift-card--qr"
+            data-qr-src="./assets/qr-groom.jpg"
+            data-qr-alt="VietQR transfer — groom"
+            role="button"
+            tabindex="0"
+            aria-haspopup="dialog"
+          >
+            <img loading="lazy" decoding="async" src="./assets/gift.svg" alt="Hộp quà cho chú rể" />
+            <p>FOR THE GROOM</p>
+          </article>
+          <article
+            class="gift-card pop-in gift-card--qr"
+            data-qr-src="./assets/qr-bride.jpg"
+            data-qr-alt="VietQR transfer — bride"
+            role="button"
+            tabindex="0"
+            aria-haspopup="dialog"
+          >
+            <img loading="lazy" decoding="async" src="./assets/gift.svg" alt="Hộp quà cho cô dâu" />
+            <p>FOR THE BRIDE</p>
+          </article>
+        </div>
+        <p class="gift-note">IN APPRECIATION OF YOUR LOVE AND GENEROSITY</p>
+      </section>
+
+      <section class="gallery reveal">
+        <div class="photo-collage">
+          <article class="photo reveal">
+            <img loading="lazy" decoding="async" src="./assets/grid-1.jpg" alt="Ảnh cưới collage 1" />
+          </article>
+
+          <div class="collage-two">
+            <article class="photo reveal">
+              <img loading="lazy" decoding="async" src="./assets/grid-2.jpg" alt="Ảnh cưới collage 2" />
+            </article>
+            <article class="photo reveal">
+              <img loading="lazy" decoding="async" src="./assets/grid-3.jpg" alt="Ảnh cưới collage 3" />
+            </article>
+          </div>
+
+          <div class="collage-two">
+            <article class="photo reveal">
+              <img loading="lazy" decoding="async" src="./assets/grid-4.jpg" alt="Ảnh cưới collage 4" />
+            </article>
+            <article class="photo reveal">
+              <img loading="lazy" decoding="async" src="./assets/grid-5.jpg" alt="Ảnh cưới collage 5" />
+            </article>
+          </div>
+
+          <article class="photo reveal">
+            <img loading="lazy" decoding="async" src="./assets/grid-6.jpg" alt="Ảnh cưới đen trắng" />
+          </article>
+
+          <div class="collage-feature">
+            <div class="collage-feature-left">
+              <article class="photo reveal">
+                <img loading="lazy" decoding="async" src="./assets/grid-7.jpg" alt="Ảnh cưới collage 6" />
+              </article>
+              <article class="photo reveal">
+                <img loading="lazy" decoding="async" src="./assets/grid-8.jpg" alt="Ảnh cưới collage 7" />
+              </article>
+            </div>
+            <article class="photo reveal collage-feature-right">
+              <img loading="lazy" decoding="async" src="./assets/grid-9.jpg" alt="Ảnh cưới collage 8" />
+            </article>
+          </div>
+        </div>
+
+        <div class="gallery-note reveal">
+          <img loading="lazy" decoding="async" src="./assets/flower.svg" alt="Biểu tượng bó hoa" />
+          <p>YOUR PRESENCE IS OUR GREATEST HONOR!</p>
+        </div>
+      </section>
+    </main>
+
+    <div class="qr-modal" id="qr-modal" hidden>
+      <div class="qr-modal__backdrop" data-qr-close tabindex="-1"></div>
+      <div
+        class="qr-modal__dialog"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="qr-modal-title"
+      >
+        <button type="button" class="qr-modal__close" data-qr-close aria-label="Close">
+          &times;
+        </button>
+        <h2 id="qr-modal-title" class="qr-modal__title">Quét mã chuyển khoản</h2>
+        <img class="qr-modal__img" src="" alt="" />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
