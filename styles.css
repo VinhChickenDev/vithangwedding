@@ -32,10 +32,10 @@
 
 
 :root {
-  --bg: #f7f5f1;
+  --bg: #F4F4F4;
   --text: rgba(0, 0, 0, 1);
   --muted: #746c62;
-  --green: #617f50;
+  --red: #D22B2B;
   --card: #ffffff;
   --border: #e9e2d9;
   --shadow: 0 14px 24px rgba(15, 12, 9, 0.08);
@@ -50,9 +50,6 @@ html,
 body {
   margin: 0;
   background-color: var(--bg);
-  background-image: url("./assets/background.jpg");
-  background-repeat: repeat;
-  background-size: 320px auto;
   color: var(--text);
   font-family: "Sitka Text";
 
@@ -62,10 +59,6 @@ body {
   display: flex;
   justify-content: center;
   min-height: 100dvh;
-  background-image: url("./assets/background.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .site-shell {
@@ -119,7 +112,7 @@ body {
   font-size: 24px;
   line-height: 100%;
   letter-spacing: 0;
-  color: var(--green);
+  color: var(--red);
 }
 
 .hero-title {
@@ -136,8 +129,8 @@ body {
 
 .frame {
   display: grid;
-  grid-template-columns: 87px 1fr 87px;
-  gap: 8px;
+  grid-template-columns: 64px 1fr 64px;
+  gap: 6px;
   margin-top: 18px;
 }
 
@@ -163,6 +156,7 @@ body {
 }
 
 .frame-center img {
+  object-position: 42% center;
   transform: translateY(42px);
 }
 
@@ -187,7 +181,7 @@ body {
 }
 
 .frame-center {
-  margin-top: 70px;
+  margin-top: 24px;
 }
 
 .text-block {
@@ -197,7 +191,7 @@ body {
   line-height: 100%;
   letter-spacing: 0;
   text-align: center;
-  color: var(--green);
+  color: var(--red);
   margin: 32px 0;
 }
 
@@ -511,7 +505,7 @@ body {
   flex-direction: column;
   gap: 6px;
   padding-bottom: 64px;
-  border-bottom: 1px solid var(--green);
+  border-bottom: 1px solid var(--red);
   margin-bottom: 64px;
 }
 
@@ -609,7 +603,7 @@ body {
 
 .location-block a {
   border: 0;
-  background: var(--green);
+  background: var(--red);
   color: #eef2e8;
   padding: 6px 8px;
   cursor: pointer;
@@ -694,7 +688,7 @@ body {
 }
 
 .gift-card--qr:focus-visible {
-  outline: 2px solid var(--green);
+  outline: 2px solid var(--red);
   outline-offset: 4px;
 }
 
@@ -801,23 +795,6 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4px;
-}
-
-.collage-feature {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4px;
-}
-
-.collage-feature-left {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: 4px;
-}
-
-.collage-feature-right img {
-  height: 100%;
-  min-height: 284px;
 }
 
 .photo {
