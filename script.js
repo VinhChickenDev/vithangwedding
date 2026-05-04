@@ -90,6 +90,10 @@ document.querySelectorAll(".reveal, .pop-in").forEach((el) => observer.observe(e
 
   const imgEl = modal.querySelector(".qr-modal__img");
   const titleEl = modal.querySelector("#qr-modal-title");
+  const roleEl = modal.querySelector("#qr-modal-role");
+  const holderEl = modal.querySelector("#qr-modal-holder");
+  const accountEl = modal.querySelector("#qr-modal-account");
+  const stripEl = modal.querySelector("#qr-modal-strip");
   const dialogEl = modal.querySelector(".qr-modal__dialog");
   const closeEls = modal.querySelectorAll("[data-qr-close]");
   const triggers = document.querySelectorAll(".gift-card--qr[data-qr-src]");
@@ -99,6 +103,25 @@ document.querySelectorAll(".reveal, .pop-in").forEach((el) => observer.observe(e
   /** Hủy animation đóng nếu người dùng mở lại modal trước khi kết thúc */
   let modalGeneration = 0;
   const ANIM_MS = 340;
+
+  function setTextLine(element, text) {
+    if (!element) return;
+    const trimmed = (text || "").trim();
+    if (trimmed) {
+      element.textContent = trimmed;
+      element.hidden = false;
+    } else {
+      element.textContent = "";
+      element.hidden = true;
+    }
+  }
+
+  function clearQrMeta() {
+    setTextLine(roleEl, "");
+    setTextLine(holderEl, "");
+    setTextLine(accountEl, "");
+    setTextLine(stripEl, "");
+  }
 
   function finishClose(gen) {
     if (gen !== modalGeneration) return;
@@ -110,11 +133,12 @@ document.querySelectorAll(".reveal, .pop-in").forEach((el) => observer.observe(e
       imgEl.removeAttribute("src");
       imgEl.alt = "";
     }
+    clearQrMeta();
     document.body.style.overflow = "";
     if (lastFocus && typeof lastFocus.focus === "function") lastFocus.focus();
   }
 
-  function openModal(src, alt, title) {
+  function openModal(src, alt, title, meta) {
     if (!imgEl) return;
     modalGeneration += 1;
     closing = false;
@@ -122,6 +146,11 @@ document.querySelectorAll(".reveal, .pop-in").forEach((el) => observer.observe(e
     imgEl.src = src;
     imgEl.alt = alt || "";
     if (titleEl && title) titleEl.textContent = title;
+    const pack = meta && typeof meta === "object" ? meta : {};
+    setTextLine(roleEl, pack.role);
+    setTextLine(holderEl, pack.holder);
+    setTextLine(accountEl, pack.account);
+    setTextLine(stripEl, pack.bank);
     modal.classList.remove("qr-modal--open");
     modal.hidden = false;
     modal.setAttribute("aria-hidden", "false");
@@ -162,7 +191,13 @@ document.querySelectorAll(".reveal, .pop-in").forEach((el) => observer.observe(e
         document.documentElement.lang === "vi"
           ? "Quét mã chuyển khoản"
           : "Scan to transfer";
-      if (src) openModal(src, alt, title);
+      const meta = {
+        role: (card.getAttribute("data-qr-role") || "").trim(),
+        bank: (card.getAttribute("data-qr-bank") || "").trim(),
+        holder: (card.getAttribute("data-qr-holder") || "").trim(),
+        account: (card.getAttribute("data-qr-account") || "").trim(),
+      };
+      if (src) openModal(src, alt, title, meta);
     };
 
     card.addEventListener("click", (e) => {

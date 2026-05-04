@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Great+Vibes&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
   </head>
   <body>
     <audio
@@ -153,28 +153,132 @@
       </section>
 
       <section class="invite-card reveal">
-        <p class="invite-top">HÔN LỄ ĐƯỢC CỬ HÀNH TẠI TƯ GIA NAM</p>
-        <p class="invite-sub">VÀO LÚC 8H30 — NGÀY 25/05/2026</p>
-        <div class="invite-time">
-          <img loading="lazy" decoding="async" src="./assets/ngay-gio.png" alt="Ngay gio" />
-          <p>NHẰM NGÀY 09 THÁNG 04 NĂM BÍNH NGỌ</p>
+        <p class="invite-top">TRÂN TRỌNG KÍNH MỜI</p>
+        <p class="invite-sub">ĐẾN DỰ BUỔI LỄ / TIỆC CHUNG VUI CÙNG GIA ĐÌNH CHÚNG TÔI</p>
+        <h3 class="invite-venue invite-venue--compact">LỄ VU QUY — NHÀ GÁI</h3>
+        <div class="date-rail" aria-label="Ngày giờ lễ vu quy">
+          <p class="date-rail__time">10 : 30</p>
+          <div class="date-rail__row">
+            <div class="date-rail__side">
+              <div class="date-rail__lines">
+                <span class="date-rail__rule" aria-hidden="true"></span>
+                <span class="date-rail__lines-label">THÁNG 5</span>
+                <span class="date-rail__rule" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="date-rail__day">10</div>
+            <div class="date-rail__side">
+              <div class="date-rail__lines">
+                <span class="date-rail__rule" aria-hidden="true"></span>
+                <span class="date-rail__lines-label">2026</span>
+                <span class="date-rail__rule" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+          <p class="date-rail__lunar">Nhằm ngày 24 tháng 03 năm Bính Ngọ</p>
         </div>
-        <div class="invite-address">
-          <p>27 THÔN 5 HÀ MÒN — XÃ ĐĂK HÀ, TỈNH QUẢNG NGÃI</p>
-        </div>
-        <h2 style="margin: 1.25rem 0 8px">TRÂN TRỌNG KÍNH MỜI</h2>
-        <h6 style="margin: 0">ĐẾN DỰ BUỔI LỄ / TIỆC CHUNG VUI CÙNG GIA ĐÌNH CHÚNG TÔI</h6>
-        <h3 class="invite-venue" style="margin: 18px 0 8px">TỔ CHỨC TẠI TƯ GIA NỮ</h3>
-        <p class="invite-sub">10H30 — NGÀY 10/05/2026</p>
-        <p class="invite-sub">NHẰM NGÀY 24 THÁNG 03 NĂM BÍNH NGỌ</p>
         <div class="invite-address">
           <p>SÂN BÓNG ĐƯỜNG SỐ 3, THÔN LA HUÂN</p>
           <p>XÃ ĐIỆN BÀN TÂY, TP ĐÀ NẴNG</p>
         </div>
+        <h3 class="invite-venue invite-venue--compact" style="margin-top: 1.25rem">LỄ THÀNH HÔN — NHÀ TRAI</h3>
+        <div class="date-rail" aria-label="Ngày giờ lễ thành hôn">
+          <p class="date-rail__time">08 : 30</p>
+          <div class="date-rail__row">
+            <div class="date-rail__side">
+              <div class="date-rail__lines">
+                <span class="date-rail__rule" aria-hidden="true"></span>
+                <span class="date-rail__lines-label">THÁNG 5</span>
+                <span class="date-rail__rule" aria-hidden="true"></span>
+              </div>
+            </div>
+            <div class="date-rail__day">25</div>
+            <div class="date-rail__side">
+              <div class="date-rail__lines">
+                <span class="date-rail__rule" aria-hidden="true"></span>
+                <span class="date-rail__lines-label">2026</span>
+                <span class="date-rail__rule" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+          <p class="date-rail__lunar">Nhằm ngày 09 tháng 04 năm Bính Ngọ</p>
+        </div>
+        <div class="invite-address">
+          <p>27 THÔN 5 HÀ MÒN — XÃ ĐĂK HÀ, TỈNH QUẢNG NGÃI</p>
+        </div>
       </section>
 
       <section class="calendar-block reveal">
-        <img loading="lazy" decoding="async" src="./assets/vi_calendar.jpg" alt="Lich cuoi" />
+        <article class="save-date-card" aria-label="Vu quy 10 thang 5 nam 2026">
+          <p class="save-date-card__label">Vu quy — Nhà gái</p>
+          <svg class="save-date-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="8" y="10" width="24" height="22" rx="2" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M8 16h24" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M14 8v6M26 8v6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            <svg class="save-date-card__heart" x="9" y="17" width="22" height="22" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M50 90C23 68 10 48 10 32 10 20 19 11 31 11 39 11 46 17 50 26 54 17 61 11 69 11 81 11 90 20 90 32 90 48 77 68 50 90z" />
+            </svg>
+          </svg>
+          <p class="save-date-card__month">THÁNG 5</p>
+          <div class="save-date-card__hero">
+            <div class="save-date-card__side">
+              <div class="save-date-card__side-inner">CHỦ NHẬT</div>
+            </div>
+            <div class="save-date-card__day">10</div>
+            <div class="save-date-card__side">
+              <div class="save-date-card__side-inner">2026</div>
+            </div>
+          </div>
+          <div class="save-date-card__mini mini-cal" aria-hidden="true">
+            <div class="mini-cal__dows">
+              <span>T2</span><span>T3</span><span>T4</span><span>T5</span><span>T6</span><span>T7</span><span>CN</span>
+            </div>
+            <div class="mini-cal__cells">
+              <span class="mini-cal__cell mini-cal__cell--muted"></span><span class="mini-cal__cell mini-cal__cell--muted"></span><span class="mini-cal__cell mini-cal__cell--muted"></span><span class="mini-cal__cell mini-cal__cell--muted"></span>
+              <span class="mini-cal__cell">1</span><span class="mini-cal__cell">2</span><span class="mini-cal__cell">3</span>
+              <span class="mini-cal__cell">4</span><span class="mini-cal__cell">5</span><span class="mini-cal__cell">6</span><span class="mini-cal__cell">7</span><span class="mini-cal__cell">8</span><span class="mini-cal__cell">9</span>
+              <span class="mini-cal__cell mini-cal__cell--picked"><span class="mini-cal__picked-inner"><svg class="mini-cal__heart" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path fill="currentColor" d="M50 90C23 68 10 48 10 32 10 20 19 11 31 11 39 11 46 17 50 26 54 17 61 11 69 11 81 11 90 20 90 32 90 48 77 68 50 90z"/></svg><span class="mini-cal__num">10</span></span></span>
+              <span class="mini-cal__cell">11</span><span class="mini-cal__cell">12</span><span class="mini-cal__cell">13</span><span class="mini-cal__cell">14</span><span class="mini-cal__cell">15</span><span class="mini-cal__cell">16</span><span class="mini-cal__cell">17</span>
+              <span class="mini-cal__cell">18</span><span class="mini-cal__cell">19</span><span class="mini-cal__cell">20</span><span class="mini-cal__cell">21</span><span class="mini-cal__cell">22</span><span class="mini-cal__cell">23</span><span class="mini-cal__cell">24</span>
+              <span class="mini-cal__cell">25</span><span class="mini-cal__cell">26</span><span class="mini-cal__cell">27</span><span class="mini-cal__cell">28</span><span class="mini-cal__cell">29</span><span class="mini-cal__cell">30</span><span class="mini-cal__cell">31</span>
+            </div>
+          </div>
+        </article>
+        <article class="save-date-card" aria-label="Thanh hon 25 thang 5 nam 2026">
+          <p class="save-date-card__label">Thành hôn — Nhà trai</p>
+          <svg class="save-date-card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="8" y="10" width="24" height="22" rx="2" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M8 16h24" stroke="currentColor" stroke-width="1.2"/>
+            <path d="M14 8v6M26 8v6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+            <svg class="save-date-card__heart" x="9" y="17" width="22" height="22" viewBox="0 0 100 100" aria-hidden="true" focusable="false">
+              <path fill="currentColor" d="M50 90C23 68 10 48 10 32 10 20 19 11 31 11 39 11 46 17 50 26 54 17 61 11 69 11 81 11 90 20 90 32 90 48 77 68 50 90z" />
+            </svg>
+          </svg>
+          <p class="save-date-card__month">THÁNG 5</p>
+          <div class="save-date-card__hero">
+            <div class="save-date-card__side">
+              <div class="save-date-card__side-inner">THỨ HAI</div>
+            </div>
+            <div class="save-date-card__day">25</div>
+            <div class="save-date-card__side">
+              <div class="save-date-card__side-inner">2026</div>
+            </div>
+          </div>
+          <div class="save-date-card__mini mini-cal" aria-hidden="true">
+            <div class="mini-cal__dows">
+              <span>T2</span><span>T3</span><span>T4</span><span>T5</span><span>T6</span><span>T7</span><span>CN</span>
+            </div>
+            <div class="mini-cal__cells">
+              <span class="mini-cal__cell mini-cal__cell--muted"></span><span class="mini-cal__cell mini-cal__cell--muted"></span><span class="mini-cal__cell mini-cal__cell--muted"></span><span class="mini-cal__cell mini-cal__cell--muted"></span>
+              <span class="mini-cal__cell">1</span><span class="mini-cal__cell">2</span><span class="mini-cal__cell">3</span>
+              <span class="mini-cal__cell">4</span><span class="mini-cal__cell">5</span><span class="mini-cal__cell">6</span><span class="mini-cal__cell">7</span><span class="mini-cal__cell">8</span><span class="mini-cal__cell">9</span><span class="mini-cal__cell">10</span>
+              <span class="mini-cal__cell">11</span><span class="mini-cal__cell">12</span><span class="mini-cal__cell">13</span><span class="mini-cal__cell">14</span><span class="mini-cal__cell">15</span><span class="mini-cal__cell">16</span><span class="mini-cal__cell">17</span>
+              <span class="mini-cal__cell">18</span><span class="mini-cal__cell">19</span><span class="mini-cal__cell">20</span><span class="mini-cal__cell">21</span><span class="mini-cal__cell">22</span><span class="mini-cal__cell">23</span><span class="mini-cal__cell">24</span>
+              <span class="mini-cal__cell mini-cal__cell--picked"><span class="mini-cal__picked-inner"><svg class="mini-cal__heart" viewBox="0 0 100 100" aria-hidden="true" focusable="false"><path fill="currentColor" d="M50 90C23 68 10 48 10 32 10 20 19 11 31 11 39 11 46 17 50 26 54 17 61 11 69 11 81 11 90 20 90 32 90 48 77 68 50 90z"/></svg><span class="mini-cal__num">25</span></span></span>
+              <span class="mini-cal__cell">26</span><span class="mini-cal__cell">27</span><span class="mini-cal__cell">28</span><span class="mini-cal__cell">29</span><span class="mini-cal__cell">30</span><span class="mini-cal__cell">31</span>
+            </div>
+          </div>
+        </article>
       </section>
 
       <section class="location-block reveal">
@@ -187,8 +291,12 @@
         <div class="gift-row">
           <article
             class="gift-card pop-in gift-card--qr"
-            data-qr-src="./assets/qr-groom.jpg"
+            data-qr-src="./assets/qr-groom.png"
             data-qr-alt="Ma VietQR chuyen khoan — chu re"
+            data-qr-role="Chú rể"
+            data-qr-bank="Techcombank"
+            data-qr-holder="HOANG QUANG THANG"
+            data-qr-account="1903 5882 3810 12"
             role="button"
             tabindex="0"
             aria-haspopup="dialog"
@@ -198,8 +306,12 @@
           </article>
           <article
             class="gift-card pop-in gift-card--qr"
-            data-qr-src="./assets/qr-bride.jpg"
+            data-qr-src="./assets/qr-bride.png"
             data-qr-alt="Ma VietQR chuyen khoan — co dau"
+            data-qr-role="Cô dâu"
+            data-qr-bank="Vietcombank"
+            data-qr-holder="TRUONG THI THUY VI"
+            data-qr-account="9764473220"
             role="button"
             tabindex="0"
             aria-haspopup="dialog"
@@ -241,6 +353,18 @@
           <p>SỰ HIỆN DIỆN CỦA QUÝ KHÁCH LÀ NIỀM VINH HẠNH CỦA GIA ĐÌNH CHÚNG TÔI</p>
         </div>
       </section>
+
+      <footer class="site-footer reveal">
+        <p class="site-footer__text">
+          Website:
+          <a
+            class="site-footer__link"
+            href="https://trangiavinh.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Tran Gia Vinh — portfolio</a>
+        </p>
+      </footer>
     </main>
 
     <div class="qr-modal" id="qr-modal" hidden>
@@ -255,7 +379,16 @@
           &times;
         </button>
         <h2 id="qr-modal-title" class="qr-modal__title">Quét mã chuyển khoản</h2>
-        <img class="qr-modal__img" src="" alt="" />
+        <div class="qr-modal__meta">
+          <p id="qr-modal-role" class="qr-modal__role" hidden></p>
+          <p id="qr-modal-holder" class="qr-modal__holder" hidden></p>
+          <p id="qr-modal-account" class="qr-modal__account" hidden></p>
+        </div>
+        <div class="qr-modal__qr-card">
+          <div id="qr-modal-strip" class="qr-modal__strip" hidden></div>
+          <img class="qr-modal__img" src="" alt="" />
+          <p class="qr-modal__networks">VIETQR · napas 247</p>
+        </div>
       </div>
     </div>
 
