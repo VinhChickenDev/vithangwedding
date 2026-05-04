@@ -35,7 +35,8 @@
   --bg: #F4F4F4;
   --text: rgba(0, 0, 0, 1);
   --muted: #746c62;
-  --red: #D22B2B;
+  --gold: #d22b2b;
+  --gold: #b8860b;
   --card: #ffffff;
   --border: #e9e2d9;
   --shadow: 0 14px 24px rgba(15, 12, 9, 0.08);
@@ -116,7 +117,7 @@ body {
   font-size: 24px;
   line-height: 100%;
   letter-spacing: 0;
-  color: var(--red);
+  color: var(--gold);
 }
 
 .hero-title {
@@ -195,7 +196,7 @@ body {
   line-height: 100%;
   letter-spacing: 0;
   text-align: center;
-  color: var(--red);
+  color: var(--gold);
   margin: 32px 0;
 }
 
@@ -209,7 +210,7 @@ body {
 }
 
 .player-ui {
-  color: var(--red);
+  color: var(--gold);
 }
 
 .player-controls {
@@ -253,7 +254,7 @@ body {
 .bar {
   width: 8px;
   border-radius: 999px;
-  background: var(--red);
+  background: var(--gold);
   transform-origin: center center;
 }
 
@@ -669,7 +670,7 @@ body {
   width: 100%;
   max-width: 360px;
   margin: 0 auto;
-  background: var(--red);
+  background: var(--gold);
   color: #fffef9;
   padding: clamp(16px, 4.5vw, 26px) clamp(16px, 4.5vw, 26px) clamp(22px, 5.5vw, 30px);
   display: flex;
@@ -883,7 +884,7 @@ body {
   font-family: "Outfit", system-ui, sans-serif;
   font-size: clamp(14px, 4vw, 18px);
   font-weight: 600;
-  color: var(--red);
+  color: var(--gold);
   letter-spacing: -0.02em;
   line-height: 1;
   text-shadow:
@@ -956,7 +957,7 @@ body {
 
 .location-block a {
   border: 0;
-  background: var(--red);
+  background: var(--gold);
   color: #eef2e8;
   padding: 6px 8px;
   cursor: pointer;
@@ -1041,7 +1042,7 @@ body {
 }
 
 .gift-card--qr:focus-visible {
-  outline: 2px solid var(--red);
+  outline: 2px solid var(--gold);
   outline-offset: 4px;
 }
 
@@ -1140,7 +1141,7 @@ body {
   font-family: "Cormorant Garamond", serif;
   font-size: 19px;
   font-weight: 600;
-  color: var(--red);
+  color: var(--gold);
 }
 
 .qr-modal__holder {
@@ -1252,7 +1253,7 @@ body {
   line-height: 1;
   letter-spacing: 0;
   text-align: center;
-  color: rgba(172, 0, 0, 1);
+  color: var(--gold);
   margin: 45px 0 0;
 }
 
@@ -1293,7 +1294,7 @@ body {
 }
 
 .site-footer__link {
-  color: var(--red);
+  color: var(--gold);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
